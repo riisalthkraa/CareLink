@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez-nous pour toute question sur CareLink. Téléchargez le logiciel ou envoyez-nous un message.">
+    <meta name="keywords" content="contact CareLink, support, télécharger CareLink, aide">
+    <meta name="author" content="VIEY David">
+    <title>Contact - CareLink</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <span>🏥</span>
+                <span>CareLink</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+                <li><a href="services.html">Services Pro</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="changelog.html">Changelog</a></li>
+                <li><a href="qualite.html">Qualité</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="open-source.html">Open Source</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>Contactez-Nous</h1>
+            <p>Une question ? Besoin d'aide ? Nous sommes là pour vous.</p>
+        </div>
+    </section>
+
+    <!-- TÉLÉCHARGEMENT -->
+    <section class="section" id="telecharger">
+        <div class="container">
+            <h2 class="section-title">Télécharger CareLink</h2>
+            <p class="section-subtitle">Choisissez la version adaptée à votre système d'exploitation</p>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="feature-icon">🪟</div>
+                    <h3>Windows</h3>
+                    <p>Compatible Windows 10 et supérieur</p>
+                    <a href="https://github.com/riisalthkraa/CareLinkOpensource/releases/download/v2.5.0/CareLink.Setup.2.5.0.exe" class="btn-primary" style="margin-top: 2rem; display: inline-block;">Télécharger pour Windows</a>
+                    <p style="margin-top: 1rem; color: var(--text-light); font-size: 0.9rem;">Version 2.5.0</p>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="feature-icon">🍎</div>
+                    <h3>macOS</h3>
+                    <p>Compatible macOS 10.15 Catalina et supérieur</p>
+                    <span class="btn-secondary" style="margin-top: 2rem; display: inline-block; opacity: 0.6; cursor: not-allowed;">En cours de développement</span>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="feature-icon">🐧</div>
+                    <h3>Linux</h3>
+                    <p>AppImage et .deb</p>
+                    <span class="btn-secondary" style="margin-top: 2rem; display: inline-block; opacity: 0.6; cursor: not-allowed;">En cours de développement</span>
+                </div>
+            </div>
+
+            <div class="text-center mt-2">
+                <p style="color: var(--text-light);">
+                    💡 <strong>Open Source:</strong> CareLink est gratuit et open source. Téléchargez la dernière version sur GitHub.<br>
+                    <a href="https://github.com/riisalthkraa/CareLinkOpensource" style="color: var(--primary);">Voir le code source</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFORMATIONS DE CONTACT -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Informations de Contact</h2>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="feature-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>Pour toute question, suggestion ou demande de support :</p>
+                    <a href="mailto:Riisalthkarral@gmail.com">Riisalthkarral@gmail.com</a>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
+                        Réponse sous 24-48h
+                    </p>
+                </div>
+
+                <div class="contact-info">
+                    <div class="feature-icon">👨‍💻</div>
+                    <h3>Développeur</h3>
+                    <p><strong>VIEY David</strong></p>
+                    <p>Créateur et développeur principal de CareLink</p>
+                    <p style="margin-top: 1rem;">
+                        Passionné par la technologie et l'innovation médicale
+                    </p>
+                </div>
+
+                <div class="contact-info">
+                    <div class="feature-icon">📦</div>
+                    <h3>Version Actuelle</h3>
+                    <p><strong>CareLink v2.5.0</strong></p>
+                    <p>Dernière mise à jour : Novembre 2024</p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">
+                        Inclut toutes les dernières fonctionnalités et corrections de sécurité
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULAIRE DE CONTACT -->
+    <section class="section">
+        <div class="contact-container">
+            <h2 class="section-title">Envoyez-nous un Message</h2>
+            <p class="section-subtitle">Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nom complet *</label>
+                    <input type="text" id="name" name="name" required placeholder="Votre nom">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="votre.email@exemple.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Sujet *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Sélectionnez un sujet</option>
+                        <option value="download">Demande de téléchargement</option>
+                        <option value="support">Support technique</option>
+                        <option value="bug">Signaler un bug</option>
+                        <option value="feature">Suggestion de fonctionnalité</option>
+                        <option value="question">Question générale</option>
+                        <option value="other">Autre</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required placeholder="Décrivez votre demande en détail..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Envoyer le Message</button>
+
+                <p style="margin-top: 1rem; color: var(--text-light); font-size: 0.9rem;">
+                    * Champs obligatoires
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ SUPPORT -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Questions Fréquentes</h2>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🚀 Comment installer CareLink ?</h3>
+                    <p>Téléchargez l'installateur pour votre système d'exploitation, exécutez-le et suivez les instructions. L'installation prend moins de 5 minutes.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>💻 Configuration minimale requise ?</h3>
+                    <p><strong>Windows:</strong> Windows 10+, 4GB RAM, 500MB disque<br>
+                    <strong>macOS:</strong> macOS 10.15+, 4GB RAM, 500MB disque<br>
+                    <strong>Linux:</strong> Ubuntu 20.04+ ou équivalent, 4GB RAM, 500MB disque</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🔒 Mes données sont-elles sécurisées ?</h3>
+                    <p>Absolument ! Toutes vos données sont stockées localement sur votre ordinateur avec un chiffrement AES-256. Aucune donnée n'est envoyée sur internet.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🆓 CareLink est-il vraiment gratuit ?</h3>
+                    <p>Oui, 100% gratuit sans limitation. Aucun abonnement, aucune publicité, aucun coût caché. Toutes les fonctionnalités sont incluses gratuitement.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>📱 Y a-t-il une version mobile ?</h3>
+                    <p>Pas encore. CareLink est actuellement disponible uniquement sur desktop (Windows, Mac, Linux). Une version mobile est prévue pour l'avenir.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🔄 Comment sauvegarder mes données ?</h3>
+                    <p>CareLink effectue des backups automatiques quotidiens. Vous pouvez aussi exporter manuellement toutes vos données via la section "Backup" de l'application.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🌐 Faut-il une connexion internet ?</h3>
+                    <p>Non, CareLink fonctionne entièrement hors ligne. Une connexion internet est nécessaire uniquement pour les fonctionnalités d'IA (mais vous pouvez utiliser Ollama en local).</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>👨‍👩‍👧 Combien de membres puis-je ajouter ?</h3>
+                    <p>Il n'y a aucune limite ! Vous pouvez ajouter autant de membres de famille que vous le souhaitez, chacun avec son propre profil et ses propres données.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🔧 Comment obtenir de l'aide ?</h3>
+                    <p>Envoyez-nous un email à Riisalthkarral@gmail.com. Nous répondons généralement sous 24-48h. Vous pouvez aussi consulter la documentation intégrée à l'application.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+        <div class="container text-center">
+            <h2 class="section-title">Prêt à Commencer ?</h2>
+            <p class="section-subtitle">Téléchargez CareLink maintenant et prenez le contrôle de votre santé familiale.</p>
+            <div class="hero-buttons">
+                <a href="#telecharger" class="btn-primary">Télécharger CareLink</a>
+                <a href="fonctionnalites.html" class="btn-secondary">Découvrir les Fonctionnalités</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CareLink</h3>
+                <p>Gestion Connectée de la Santé Familiale</p>
+                <p style="margin-top: 1rem;">Version 2.5.0</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+                    <li><a href="services.html">Services Pro</a></li>
+                    <li><a href="tarifs.html">Tarifs</a></li>
+                    <li><a href="open-source.html">Open Source</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Légal</h3>
+                <ul>
+                    <li><a href="cgv.html">Conditions Générales</a></li>
+                    <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:Riisalthkarral@gmail.com">Riisalthkarral@gmail.com</a></p>
+                <p>Développeur: VIEY David</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 CareLink - Développé par VIEY David - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

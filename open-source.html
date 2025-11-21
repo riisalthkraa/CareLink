@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CareLink est un logiciel open source gratuit pour les particuliers. Consultez le code source et la licence.">
+    <meta name="keywords" content="open source, CareLink, code source, licence, gratuit">
+    <meta name="author" content="VIEY David">
+    <title>Open Source - CareLink</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <span>🏥</span>
+                <span>CareLink</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+                <li><a href="services.html">Services Pro</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="changelog.html">Changelog</a></li>
+                <li><a href="qualite.html">Qualité</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="open-source.html" class="active">Open Source</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>CareLink est Open Source</h1>
+            <p>Gratuit pour les particuliers. Transparent. Collaboratif.</p>
+        </div>
+    </section>
+
+    <!-- PHILOSOPHIE -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Notre Philosophie</h2>
+            <p class="section-subtitle">La sante ne devrait pas etre un luxe. La technologie devrait servir tout le monde.</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💚</div>
+                    <h3>Gratuit pour Tous</h3>
+                    <p>Les particuliers, associations, etudiants et organismes publics peuvent utiliser CareLink gratuitement, sans limitation.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔓</div>
+                    <h3>Code Source Ouvert</h3>
+                    <p>Le code est accessible a tous. Vous pouvez l'inspecter, le modifier et contribuer a son amelioration.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Communaute</h3>
+                    <p>Rejoignez une communaute de developpeurs et d'utilisateurs qui ameliorent CareLink ensemble.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LICENCE -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Licence BSL 1.1</h2>
+            <p class="section-subtitle">Business Source License - Un modele equitable</p>
+
+            <div class="pricing-grid">
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">GRATUIT</div>
+                    <h3>Usage Personnel</h3>
+                    <ul class="pricing-features">
+                        <li>Particuliers et familles</li>
+                        <li>Etudiants et enseignants</li>
+                        <li>Associations a but non lucratif</li>
+                        <li>Hopitaux et EHPAD publics</li>
+                        <li>Developpeurs (contribution)</li>
+                        <li>Toutes les fonctionnalites incluses</li>
+                    </ul>
+                    <a href="https://github.com/riisalthkraa/CareLinkOpensource/releases/download/v2.5.0/CareLink.Setup.2.5.0.exe" class="btn-primary" style="margin-top: 2rem;">Telecharger Windows</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Usage Commercial</h3>
+                    <ul class="pricing-features">
+                        <li>Entreprises (+10 employes)</li>
+                        <li>Cliniques privees</li>
+                        <li>Laboratoires pharmaceutiques</li>
+                        <li>Assurances et mutuelles</li>
+                        <li>Integration produit/SaaS</li>
+                        <li>Support prioritaire inclus</li>
+                    </ul>
+                    <a href="contact.html" class="btn-secondary" style="margin-top: 2rem;">Nous Contacter</a>
+                </div>
+            </div>
+
+            <div class="text-center mt-2">
+                <p style="color: var(--text-light);">
+                    En 2029, CareLink passera automatiquement sous licence Apache 2.0, permettant un usage commercial libre pour tous.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CODE SOURCE -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Acceder au Code Source</h2>
+            <p class="section-subtitle">Explorez, apprenez et contribuez</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📁</div>
+                    <h3>Code Source GitHub</h3>
+                    <p><strong>Technologies utilisees :</strong></p>
+                    <ul style="text-align: left; margin-top: 1rem;">
+                        <li>TypeScript / React</li>
+                        <li>Electron (desktop)</li>
+                        <li>SQLite (base de donnees locale)</li>
+                        <li>Python (backend IA)</li>
+                        <li>AES-256 (chiffrement)</li>
+                    </ul>
+                    <a href="https://github.com/riisalthkraa/CareLinkOpensource" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Voir sur GitHub</a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📖</div>
+                    <h3>Documentation API</h3>
+                    <p>Documentation complete generee automatiquement avec TypeDoc.</p>
+                    <a href="test-web-published/docs/index.html" class="btn-secondary" style="margin-top: 1rem; display: inline-block;">Voir la Documentation</a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🧪</div>
+                    <h3>Tests</h3>
+                    <p>Suite de tests Jest pour garantir la qualite et la fiabilite du code.</p>
+                    <a href="test-web-published/index.html" class="btn-secondary" style="margin-top: 1rem; display: inline-block;">Voir les Tests</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTRIBUER -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Comment Contribuer</h2>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🐛</div>
+                    <h3>Signaler un Bug</h3>
+                    <p>Vous avez trouve un probleme ? Contactez-nous pour nous le signaler.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>Proposer une Idee</h3>
+                    <p>Une suggestion d'amelioration ? Nous sommes a l'ecoute de vos idees.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍💻</div>
+                    <h3>Contribuer au Code</h3>
+                    <p>Developpeur ? Vous pouvez contribuer directement au projet.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-2">
+                <a href="https://github.com/riisalthkraa/CareLinkOpensource/issues" class="btn-primary">Ouvrir une Issue sur GitHub</a>
+                <a href="https://github.com/riisalthkraa/CareLinkOpensource" class="btn-secondary" style="margin-left: 1rem;">Voir le Repository</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- LICENCE COMPLETE -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Texte Complet de la Licence</h2>
+
+            <div style="background: var(--bg-dark); padding: 2rem; border-radius: 1rem; color: var(--text-light); font-family: monospace; white-space: pre-wrap; max-height: 400px; overflow-y: auto;">
+# Business Source License 1.1 (BSL 1.1)
+
+## CareLink - Licence d'Utilisation
+
+Licenseur : VIEY David
+Logiciel : CareLink v2.5.0
+Date de Licence : 21 novembre 2025
+Date de Conversion Open Source : 21 novembre 2029
+Licence de Conversion : Apache License 2.0
+
+---
+
+## CONDITIONS D'UTILISATION
+
+### Usage Gratuit Autorise
+
+Vous pouvez utiliser, copier, modifier et redistribuer ce logiciel
+GRATUITEMENT pour :
+
+- Usage personnel - Gestion de votre sante familiale
+- Usage educatif - Apprentissage, recherche academique
+- Usage associatif - Associations a but non lucratif
+- Organisations de sante publique - Hopitaux publics, EHPAD publics
+- Developpement et contribution - Amelioration du logiciel
+
+### Usage Commercial (Licence Payante Requise)
+
+Une licence commerciale est requise pour :
+
+- Entreprises privees de plus de 10 employes
+- Cliniques et cabinets prives
+- Laboratoires pharmaceutiques
+- Assurances et mutuelles privees
+- Revente ou integration dans un produit commercial
+- Services SaaS bases sur ce logiciel
+
+---
+
+Copyright (c) 2025 VIEY David - Tous droits reserves selon les termes ci-dessus.
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CareLink</h3>
+                <p>Gestion Connectee de la Sante Familiale</p>
+                <p style="margin-top: 1rem;">Version 2.5.0</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="fonctionnalites.html">Fonctionnalites</a></li>
+                    <li><a href="services.html">Services Pro</a></li>
+                    <li><a href="tarifs.html">Tarifs</a></li>
+                    <li><a href="open-source.html">Open Source</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="cgv.html">Conditions Generales</a></li>
+                    <li><a href="mentions-legales.html">Mentions Legales</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:Riisalthkarral@gmail.com">Riisalthkarral@gmail.com</a></p>
+                <p>Developpeur: VIEY David</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 CareLink - Developpe par VIEY David - Tous droits reserves</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

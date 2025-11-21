@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Qualité et Tests CareLink v2.5.0 - 45+ tests automatisés, score audit 82/100">
+    <title>Qualité & Tests - CareLink</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <span>🏥</span>
+                <span>CareLink</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+                <li><a href="services.html">Services Pro</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="changelog.html">Changelog</a></li>
+                <li><a href="qualite.html" class="active">Qualité</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="open-source.html">Open Source</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" style="background: linear-gradient(135deg, #0A1929 0%, #132D45 100%);">
+        <div class="container">
+            <div style="display: inline-block; padding: 0.75rem 1.5rem; background: rgba(59,155,255,0.2); color: #3B9BFF; border-radius: 50px; font-weight: 700; margin-bottom: 1rem;">
+                🏆 Version 2.5.0 - 15 Novembre 2024
+            </div>
+            <h1 style="color: white;">Qualité & Transparence</h1>
+            <p style="color: white; opacity: 0.95; font-size: 1.25rem; margin-top: 1rem;">
+                45 tests automatisés • Score d'audit 82/100 • 0 bug critique
+            </p>
+        </div>
+    </section>
+
+    <!-- Scores principaux -->
+    <section class="section" style="margin-top: -3rem; position: relative; z-index: 10;">
+        <div class="container">
+            <div class="stats-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;">
+                <div class="stat-card" style="background: white; padding: 2.5rem; border-radius: 20px; text-align: center; box-shadow: 0 10px 40px rgba(0,0,0,0.15); border-top: 5px solid #3B9BFF; color: #1a1a1a;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">🧪</div>
+                    <div style="font-size: 3.5rem; font-weight: 900; color: #3B9BFF; margin-bottom: 0.5rem;">45</div>
+                    <div style="color: #666; font-weight: 600; font-size: 1.1rem;">Tests Réussis</div>
+                    <div style="height: 10px; background: #f0f0f0; border-radius: 5px; margin-top: 1.5rem; overflow: hidden;">
+                        <div style="height: 100%; width: 100%; background: linear-gradient(90deg, #3B9BFF, #00E676);"></div>
+                    </div>
+                </div>
+
+                <div class="stat-card" style="background: white; padding: 2.5rem; border-radius: 20px; text-align: center; box-shadow: 0 10px 40px rgba(0,0,0,0.15); border-top: 5px solid #00E676; color: #1a1a1a;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">🏆</div>
+                    <div style="font-size: 3.5rem; font-weight: 900; color: #00E676; margin-bottom: 0.5rem;">82/100</div>
+                    <div style="color: #666; font-weight: 600; font-size: 1.1rem;">Score Global</div>
+                    <div style="height: 10px; background: #f0f0f0; border-radius: 5px; margin-top: 1.5rem; overflow: hidden;">
+                        <div style="height: 100%; width: 82%; background: linear-gradient(90deg, #00E676, #3B9BFF);"></div>
+                    </div>
+                </div>
+
+                <div class="stat-card" style="background: white; padding: 2.5rem; border-radius: 20px; text-align: center; box-shadow: 0 10px 40px rgba(0,0,0,0.15); border-top: 5px solid #00E676; color: #1a1a1a;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">🔒</div>
+                    <div style="font-size: 3.5rem; font-weight: 900; color: #00E676; margin-bottom: 0.5rem;">88/100</div>
+                    <div style="color: #666; font-weight: 600; font-size: 1.1rem;">Sécurité</div>
+                    <div style="height: 10px; background: #f0f0f0; border-radius: 5px; margin-top: 1.5rem; overflow: hidden;">
+                        <div style="height: 100%; width: 88%; background: linear-gradient(90deg, #00E676, #3B9BFF);"></div>
+                    </div>
+                </div>
+
+                <div class="stat-card" style="background: white; padding: 2.5rem; border-radius: 20px; text-align: center; box-shadow: 0 10px 40px rgba(0,0,0,0.15); border-top: 5px solid #00E676; color: #1a1a1a;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">🐛</div>
+                    <div style="font-size: 3.5rem; font-weight: 900; color: #00E676; margin-bottom: 0.5rem;">0</div>
+                    <div style="color: #666; font-weight: 600; font-size: 1.1rem;">Bugs Critiques</div>
+                    <div style="height: 10px; background: #f0f0f0; border-radius: 5px; margin-top: 1.5rem; overflow: hidden;">
+                        <div style="height: 100%; width: 100%; background: linear-gradient(90deg, #00E676, #3B9BFF);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tests détaillés -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">✅ Tests Automatisés - 45/45 Réussis</h2>
+            <p class="section-subtitle">Chaque release est testée automatiquement avec Jest pour garantir la stabilité</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                        <h3 style="display: flex; align-items: center; gap: 0.75rem; margin: 0;">
+                            <span style="font-size: 2rem;">✓</span> Authentification
+                        </h3>
+                        <div style="background: #00E676; color: white; padding: 0.5rem 1rem; border-radius: 50px; font-weight: 700;">8/8</div>
+                    </div>
+                    <ul style="color: #666; padding-left: 1.5rem; line-height: 1.8;">
+                        <li>Connexion utilisateur</li>
+                        <li>Chiffrement AES-256-GCM</li>
+                        <li>Gestion sessions</li>
+                        <li>Validation tokens</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                        <h3 style="display: flex; align-items: center; gap: 0.75rem; margin: 0;">
+                            <span style="font-size: 2rem;">✓</span> Dossiers Médicaux
+                        </h3>
+                        <div style="background: #00E676; color: white; padding: 0.5rem 1rem; border-radius: 50px; font-weight: 700;">12/12</div>
+                    </div>
+                    <ul style="color: #666; padding-left: 1.5rem; line-height: 1.8;">
+                        <li>CRUD membres famille</li>
+                        <li>Consultation historique</li>
+                        <li>Traitements médicaments</li>
+                        <li>Export/Import données</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                        <h3 style="display: flex; align-items: center; gap: 0.75rem; margin: 0;">
+                            <span style="font-size: 2rem;">✓</span> IA & OCR
+                        </h3>
+                        <div style="background: #00E676; color: white; padding: 0.5rem 1rem; border-radius: 50px; font-weight: 700;">10/10</div>
+                    </div>
+                    <ul style="color: #666; padding-left: 1.5rem; line-height: 1.8;">
+                        <li>Chatbot Claude/GPT/Gemini</li>
+                        <li>OCR Tesseract ordonnances</li>
+                        <li>Analyse prédictive</li>
+                        <li>Recommandations santé</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                        <h3 style="display: flex; align-items: center; gap: 0.75rem; margin: 0;">
+                            <span style="font-size: 2rem;">✓</span> Timeline 3D
+                        </h3>
+                        <div style="background: #00E676; color: white; padding: 0.5rem 1rem; border-radius: 50px; font-weight: 700;">8/8</div>
+                    </div>
+                    <ul style="color: #666; padding-left: 1.5rem; line-height: 1.8;">
+                        <li>Visualisation chronologique</li>
+                        <li>Filtres intelligents</li>
+                        <li>Graphiques Recharts</li>
+                        <li>Export PDF timeline</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                        <h3 style="display: flex; align-items: center; gap: 0.75rem; margin: 0;">
+                            <span style="font-size: 2rem;">✓</span> Thèmes
+                        </h3>
+                        <div style="background: #00E676; color: white; padding: 0.5rem 1rem; border-radius: 50px; font-weight: 700;">7/7</div>
+                    </div>
+                    <ul style="color: #666; padding-left: 1.5rem; line-height: 1.8;">
+                        <li>20 thèmes personnalisables</li>
+                        <li>Mode clair/sombre</li>
+                        <li>Export/Import thèmes</li>
+                        <li>Contraste WCAG 2.1</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audit qualité -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">📊 Audit Qualité Global - Score 82/100</h2>
+            <p class="section-subtitle">Audit professionnel effectué le 10 novembre 2024</p>
+
+            <div class="comparison-table" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                <div style="background: white; padding: 3rem; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1);">
+                    <h3 style="margin-bottom: 2rem; color: #1a1a1a;">Détail des scores</h3>
+
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
+                            <span style="font-weight: 600; color: #333;">Architecture & Modularité</span>
+                            <span style="font-weight: 700; color: #00E676;">90/100</span>
+                        </div>
+                        <div style="height: 10px; background: #f0f0f0; border-radius: 5px; overflow: hidden;">
+                            <div style="height: 100%; width: 90%; background: linear-gradient(90deg, #00E676, #3B9BFF);"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
+                            <span style="font-weight: 600; color: #333;">Qualité du Code</span>
+                            <span style="font-weight: 700; color: #3B9BFF;">85/100</span>
+                        </div>
+                        <div style="height: 10px; background: #f0f0f0; border-radius: 5px; overflow: hidden;">
+                            <div style="height: 100%; width: 85%; background: linear-gradient(90deg, #3B9BFF, #00E676);"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
+                            <span style="font-weight: 600; color: #333;">Documentation</span>
+                            <span style="font-weight: 700; color: #00E676;">88/100</span>
+                        </div>
+                        <div style="height: 10px; background: #f0f0f0; border-radius: 5px; overflow: hidden;">
+                            <div style="height: 100%; width: 88%; background: linear-gradient(90deg, #00E676, #3B9BFF);"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
+                            <span style="font-weight: 600; color: #333;">Sécurité</span>
+                            <span style="font-weight: 700; color: #00E676;">88/100</span>
+                        </div>
+                        <div style="height: 10px; background: #f0f0f0; border-radius: 5px; overflow: hidden;">
+                            <div style="height: 100%; width: 88%; background: linear-gradient(90deg, #00E676, #3B9BFF);"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
+                            <span style="font-weight: 600; color: #333;">Performance</span>
+                            <span style="font-weight: 700; color: #3B9BFF;">78/100</span>
+                        </div>
+                        <div style="height: 10px; background: #f0f0f0; border-radius: 5px; overflow: hidden;">
+                            <div style="height: 100%; width: 78%; background: linear-gradient(90deg, #3B9BFF, #00E676);"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
+                            <span style="font-weight: 600; color: #333;">Maintenabilité</span>
+                            <span style="font-weight: 700; color: #00E676;">92/100</span>
+                        </div>
+                        <div style="height: 10px; background: #f0f0f0; border-radius: 5px; overflow: hidden;">
+                            <div style="height: 100%; width: 92%; background: linear-gradient(90deg, #00E676, #3B9BFF);"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 3rem; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1);">
+                    <h3 style="margin-bottom: 2rem; color: #1a1a1a;">Points forts</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 1.25rem 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 1rem;">
+                            <span style="color: #00E676; font-size: 1.75rem;">✓</span>
+                            <div>
+                                <strong style="color: #1a1a1a;">Architecture React modulaire</strong>
+                                <div style="font-size: 0.95rem; color: #666; margin-top: 0.25rem;">17 pages, composants réutilisables</div>
+                            </div>
+                        </li>
+                        <li style="padding: 1.25rem 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 1rem;">
+                            <span style="color: #00E676; font-size: 1.75rem;">✓</span>
+                            <div>
+                                <strong style="color: #1a1a1a;">Sécurité niveau bancaire</strong>
+                                <div style="font-size: 0.95rem; color: #666; margin-top: 0.25rem;">AES-256-GCM, bcrypt, conformité RGPD</div>
+                            </div>
+                        </li>
+                        <li style="padding: 1.25rem 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 1rem;">
+                            <span style="color: #00E676; font-size: 1.75rem;">✓</span>
+                            <div>
+                                <strong style="color: #1a1a1a;">Tests automatisés complets</strong>
+                                <div style="font-size: 0.95rem; color: #666; margin-top: 0.25rem;">45 tests Jest, 100% succès</div>
+                            </div>
+                        </li>
+                        <li style="padding: 1.25rem 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 1rem;">
+                            <span style="color: #00E676; font-size: 1.75rem;">✓</span>
+                            <div>
+                                <strong style="color: #1a1a1a;">IA multi-providers</strong>
+                                <div style="font-size: 0.95rem; color: #666; margin-top: 0.25rem;">OpenAI, Anthropic, Google, Ollama</div>
+                            </div>
+                        </li>
+                        <li style="padding: 1.25rem 0; display: flex; gap: 1rem;">
+                            <span style="color: #00E676; font-size: 1.75rem;">✓</span>
+                            <div>
+                                <strong style="color: #1a1a1a;">Documentation exhaustive</strong>
+                                <div style="font-size: 0.95rem; color: #666; margin-top: 0.25rem;">Code commenté, guides utilisateur</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stack Technologique -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">💻 Stack Technologique</h2>
+            <p class="section-subtitle">Technologies modernes et éprouvées pour un logiciel fiable</p>
+
+            <div class="features-grid">
+                <div class="feature-card" style="text-align: center;">
+                    <div class="feature-icon">⚛️</div>
+                    <h3>React 18+</h3>
+                    <p style="margin-top: 0.5rem;">Framework UI moderne et performant</p>
+                </div>
+
+                <div class="feature-card" style="text-align: center;">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Electron</h3>
+                    <p style="margin-top: 0.5rem;">Apps desktop cross-platform</p>
+                </div>
+
+                <div class="feature-card" style="text-align: center;">
+                    <div class="feature-icon">🗄️</div>
+                    <h3>SQLite</h3>
+                    <p style="margin-top: 0.5rem;">Base de données locale sécurisée</p>
+                </div>
+
+                <div class="feature-card" style="text-align: center;">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Multi-IA</h3>
+                    <p style="margin-top: 0.5rem;">GPT-4, Claude, Gemini, Ollama</p>
+                </div>
+
+                <div class="feature-card" style="text-align: center;">
+                    <div class="feature-icon">🧪</div>
+                    <h3>Jest</h3>
+                    <p style="margin-top: 0.5rem;">Tests automatisés fiables</p>
+                </div>
+
+                <div class="feature-card" style="text-align: center;">
+                    <div class="feature-icon">📊</div>
+                    <h3>Recharts</h3>
+                    <p style="margin-top: 0.5rem;">Graphiques temps réel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <h2>Une qualité qui inspire confiance</h2>
+            <p>Testez CareLink et constatez par vous-même la qualité professionnelle</p>
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn-primary">Télécharger CareLink</a>
+                <a href="documentation.html" class="btn-secondary">Documentation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CareLink</h3>
+                <p>Gestion Connectée de la Santé Familiale</p>
+                <p style="margin-top: 1rem;">Version 2.5.0</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+                    <li><a href="services.html">Services Pro</a></li>
+                    <li><a href="tarifs.html">Tarifs</a></li>
+                    <li><a href="open-source.html">Open Source</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Ressources</h3>
+                <ul>
+                    <li><a href="changelog.html">Changelog</a></li>
+                    <li><a href="qualite.html">Qualité</a></li>
+                    <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="open-source.html">Open Source</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Professionnel</h3>
+                <p>Email: <a href="mailto:Riisalthkarral@gmail.com">Riisalthkarral@gmail.com</a></p>
+                <p>Développeur: VIEY David</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 CareLink - Développé par VIEY David - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

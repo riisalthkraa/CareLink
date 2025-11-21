@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CareLink - Logiciel professionnel de gestion de santé familiale. Sécurisé, complet et intelligent.">
+    <meta name="keywords" content="santé, gestion familiale, dossier médical, vaccins, traitements, IA santé">
+    <meta name="author" content="VIEY David">
+    <title>CareLink - Gestion Connectée de la Santé Familiale</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <span>🏥</span>
+                <span>CareLink</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+                <li><a href="services.html">Services Pro</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="changelog.html">Changelog</a></li>
+                <li><a href="qualite.html">Qualité</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="open-source.html">Open Source</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <h1>Gérez la Santé de Votre Famille en Toute Sécurité</h1>
+            <p>CareLink est le logiciel professionnel tout-en-un pour centraliser, organiser et protéger toutes les informations de santé de votre famille.</p>
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn-primary">Télécharger Gratuitement</a>
+                <a href="fonctionnalites.html" class="btn-secondary">Découvrir les Fonctionnalités</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- POURQUOI CARELINK -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Pourquoi Choisir CareLink ?</h2>
+            <p class="section-subtitle">Une solution complète et sécurisée, développée avec expertise pour répondre à tous vos besoins en gestion de santé familiale.</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Sécurité Maximale</h3>
+                    <p>Chiffrement AES-256 militaire pour toutes vos données. Vos informations restent sur votre ordinateur, jamais dans le cloud.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Intelligence Artificielle</h3>
+                    <p>Assistant santé intelligent, analyse prédictive et scanner d'ordonnances automatique pour vous faciliter la vie.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Visualisation Avancée</h3>
+                    <p>Timeline 3D interactive, graphiques dynamiques et rapports PDF professionnels pour suivre l'évolution de votre santé.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🆘</div>
+                    <h3>Mode Urgence</h3>
+                    <p>Protocoles de secours et numéros d'urgence accessibles sans mot de passe. Carte d'urgence QR code imprimable. Soyez préparé en toutes circonstances.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>Backups Automatiques</h3>
+                    <p>Sauvegarde quotidienne automatique de toutes vos données. Import/export facile pour une tranquillité totale.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Interface Personnalisable</h3>
+                    <p>20 thèmes différents, interface responsive et accessible. Adaptez CareLink à vos préférences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPARAISON AVEC LA CONCURRENCE -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">CareLink vs Autres Solutions</h2>
+            <p class="section-subtitle">Découvrez pourquoi CareLink est le choix le plus complet et sécurisé du marché.</p>
+
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fonctionnalité</th>
+                            <th class="highlight">CareLink</th>
+                            <th>MyTherapy</th>
+                            <th>Apple Santé</th>
+                            <th>Medisafe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Chiffrement AES-256</strong></td>
+                            <td class="check">✓</td>
+                            <td class="cross">✗</td>
+                            <td class="check">✓</td>
+                            <td class="cross">✗</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Données 100% locales (pas de cloud)</strong></td>
+                            <td class="check">✓</td>
+                            <td class="cross">✗</td>
+                            <td class="cross">✗</td>
+                            <td class="cross">✗</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Intelligence Artificielle intégrée</strong></td>
+                            <td class="check">✓</td>
+                            <td class="cross">✗</td>
+                            <td class="cross">✗</td>
+                            <td class="cross">✗</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Scanner d'ordonnances OCR</strong></td>
+                            <td class="check">✓</td>
+                            <td class="cross">✗</td>
+                            <td class="cross">✗</td>
+                            <td class="cross">✗</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Timeline 3D interactive</strong></td>
+                            <td class="check">✓</td>
+                            <td class="cross">✗</td>
+                            <td class="cross">✗</td>
+                            <td class="cross">✗</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mode Urgence sans connexion</strong></td>
+                            <td class="check">✓</td>
+                            <td class="cross">✗</td>
+                            <td class="cross">✗</td>
+                            <td class="cross">✗</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Carte d'urgence QR Code</strong></td>
+                            <td class="check">✓</td>
+                            <td class="cross">✗</td>
+                            <td class="cross">✗</td>
+                            <td class="cross">✗</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gestion des vaccins</strong></td>
+                            <td class="check">✓</td>
+                            <td class="cross">✗</td>
+                            <td class="check">✓</td>
+                            <td class="cross">✗</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Multi-plateformes (Win/Mac/Linux)</strong></td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                            <td class="cross">✗ (iOS uniquement)</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Backups automatiques</strong></td>
+                            <td class="check">✓</td>
+                            <td class="check">✓ (cloud)</td>
+                            <td class="check">✓ (iCloud)</td>
+                            <td class="check">✓ (cloud)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Nombre de thèmes</strong></td>
+                            <td class="check">20</td>
+                            <td>2</td>
+                            <td>0 (fixe)</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Export PDF professionnel</strong></td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                            <td class="cross">✗</td>
+                            <td class="cross">✗</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gestion multi-membres (famille)</strong></td>
+                            <td class="check">Illimité</td>
+                            <td>Max 4 (premium)</td>
+                            <td>1 seul</td>
+                            <td>Max 5 (premium)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Open Source</strong></td>
+                            <td class="check">✓</td>
+                            <td class="cross">✗</td>
+                            <td class="cross">✗</td>
+                            <td class="cross">✗</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Prix</strong></td>
+                            <td class="check"><strong>GRATUIT</strong></td>
+                            <td>Gratuit (limité)<br>9,99€/mois (premium)</td>
+                            <td>Gratuit (iOS uniquement)</td>
+                            <td>Gratuit (limité)<br>7,99€/mois (premium)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- AVANTAGES EXCLUSIFS -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Les Avantages Exclusifs de CareLink</h2>
+            <p class="section-subtitle">Des fonctionnalités uniques que vous ne trouverez nulle part ailleurs.</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Multi-API Intelligence Artificielle</h3>
+                    <p>Choisissez votre fournisseur d'IA préféré : OpenAI (GPT-4), Anthropic (Claude), Google (Gemini) ou Ollama (local). CareLink s'adapte à vos préférences.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📸</div>
+                    <h3>Scanner d'Ordonnances Intelligent</h3>
+                    <p>Photographiez vos ordonnances et laissez l'IA extraire automatiquement toutes les informations : médicaments, posologies, durée du traitement.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔮</div>
+                    <h3>Analyses Prédictives</h3>
+                    <p>L'assistant santé CareAI analyse vos données et vous fournit des recommandations personnalisées pour améliorer votre bien-être.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Timeline 3D Immersive</h3>
+                    <p>Visualisez l'historique médical de votre famille dans une timeline 3D interactive. Naviguez dans le temps et découvrez les tendances.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Qualité Professionnelle</h3>
+                    <p>Plus de 50 tests automatisés, système de logging centralisé, gestion d'erreurs avancée. CareLink est développé avec les mêmes standards que les logiciels professionnels.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔓</div>
+                    <h3>100% Gratuit et Open Source</h3>
+                    <p>Aucun abonnement, aucun coût caché. CareLink est et restera toujours gratuit. Vos données vous appartiennent.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATISTIQUES -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">CareLink en Chiffres</h2>
+            <div class="features-grid">
+                <div class="feature-card text-center">
+                    <h3 class="text-primary" style="font-size: 3rem; margin-bottom: 0.5rem;">20</h3>
+                    <p><strong>Thèmes personnalisables</strong><br>Adaptez l'interface à vos goûts</p>
+                </div>
+                <div class="feature-card text-center">
+                    <h3 class="text-primary" style="font-size: 3rem; margin-bottom: 0.5rem;">50+</h3>
+                    <p><strong>Tests automatisés</strong><br>Pour une fiabilité maximale</p>
+                </div>
+                <div class="feature-card text-center">
+                    <h3 class="text-primary" style="font-size: 3rem; margin-bottom: 0.5rem;">4</h3>
+                    <p><strong>Fournisseurs IA</strong><br>OpenAI, Anthropic, Google, Ollama</p>
+                </div>
+                <div class="feature-card text-center">
+                    <h3 class="text-primary" style="font-size: 3rem; margin-bottom: 0.5rem;">100%</h3>
+                    <p><strong>Sécurisé et Local</strong><br>Vos données restent chez vous</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section">
+        <div class="container text-center">
+            <h2 class="section-title">Prêt à Prendre le Contrôle de Votre Santé ?</h2>
+            <p class="section-subtitle">Téléchargez CareLink gratuitement et commencez à organiser la santé de votre famille dès aujourd'hui.</p>
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn-primary">Télécharger CareLink</a>
+                <a href="fonctionnalites.html" class="btn-secondary">En Savoir Plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CareLink</h3>
+                <p>Gestion Connectée de la Santé Familiale</p>
+                <p style="margin-top: 1rem;">Version 2.5.0</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+                    <li><a href="services.html">Services Pro</a></li>
+                    <li><a href="tarifs.html">Tarifs</a></li>
+                    <li><a href="open-source.html">Open Source</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Légal</h3>
+                <ul>
+                    <li><a href="cgv.html">Conditions Générales</a></li>
+                    <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:Riisalthkarral@gmail.com">Riisalthkarral@gmail.com</a></p>
+                <p>Développeur: VIEY David</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 CareLink - Développé par VIEY David - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

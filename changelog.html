@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Changelog CareLink v2.5.0 - Nouveautés, corrections et améliorations">
+    <title>Changelog v2.5.0 - CareLink</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <span>🏥</span>
+                <span>CareLink</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+                <li><a href="services.html">Services Pro</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="changelog.html" class="active">Changelog</a></li>
+                <li><a href="qualite.html">Qualité</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="open-source.html">Open Source</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>📋 Changelog CareLink v2.5.0</h1>
+            <p>Release du 15 novembre 2024 - Mise à jour majeure</p>
+
+            <div class="stats-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-top: 3rem;">
+                <div class="stat-card">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Nouvelles fonctionnalités</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Corrections de bugs</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">45</div>
+                    <div class="stat-label">Tests réussis</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Bugs critiques</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nouveautés majeures -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">🎉 Nouvelles Fonctionnalités Majeures</h2>
+
+            <div class="changelog-section">
+                <h3>🤖 Intelligence Artificielle Multi-Providers</h3>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <strong>✨ Support 4 Providers IA</strong>
+                        <p>Intégration complète d'OpenAI (GPT-4), Anthropic (Claude 3), Google (Gemini) et Ollama (IA locale). Choix du provider selon vos besoins et budget.</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>💬 Chatbot Santé Intelligent</strong>
+                        <p>Assistant IA capable de répondre à vos questions santé, analyser vos symptômes et fournir des recommandations personnalisées basées sur votre historique médical.</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>📊 Analyse Prédictive</strong>
+                        <p>L'IA analyse vos données de santé pour détecter des tendances, anticiper des besoins de suivi et suggérer des rappels proactifs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="changelog-section">
+                <h3>📸 OCR & Reconnaissance Documents</h3>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <strong>📄 Scan Automatique d'Ordonnances</strong>
+                        <p>Scannez vos ordonnances et CareLink extrait automatiquement les médicaments, posologies et dates avec Tesseract.js. Plus de saisie manuelle !</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>🏥 Import Documents Médicaux</strong>
+                        <p>Importez vos analyses médicales, comptes rendus et autres documents PDF. L'OCR extrait les informations clés automatiquement.</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>✅ Validation Intelligente</strong>
+                        <p>Système de validation des données extraites avec correction manuelle possible. Précision >90% sur documents bien contrastés.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="changelog-section">
+                <h3>🎨 20 Thèmes Personnalisables</h3>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <strong>🌈 Thèmes Préconçus</strong>
+                        <p>20 thèmes professionnels inclus : Dark Ocean, Sunset, Forest, Lavender, Mint Fresh, etc. Changez d'ambiance selon votre humeur.</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>🎛️ Personnalisation Avancée</strong>
+                        <p>Créez vos propres thèmes en ajustant couleurs primaires, secondaires, backgrounds et textes. Export/Import de thèmes personnalisés.</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>🌙 Mode Sombre/Clair</strong>
+                        <p>Tous les thèmes disponibles en version claire et sombre pour protéger vos yeux le soir.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="changelog-section">
+                <h3>📅 Timeline 3D Interactive</h3>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <strong>🗓️ Visualisation Chronologique</strong>
+                        <p>Timeline 3D immersive de tous vos événements de santé. Consultations, traitements, analyses, vaccins : tout est visuellement organisé.</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>🔍 Filtres Intelligents</strong>
+                        <p>Filtrez par type d'événement, membre de la famille, période ou pathologie. Zoom temporel pour explorer des périodes spécifiques.</p>
+                    </div>
+                    <div class="feature-item">
+                        <strong>📊 Graphiques Intégrés</strong>
+                        <p>Visualisez l'évolution de vos constantes (poids, tension, glycémie) directement dans la timeline avec Recharts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Améliorations -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">⚡ Améliorations & Optimisations</h2>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Sécurité Renforcée</h3>
+                    <ul style="text-align: left; margin-top: 1rem;">
+                        <li>Chiffrement AES-256-GCM amélioré</li>
+                        <li>Authentification 2FA disponible</li>
+                        <li>Audit de sécurité complet effectué</li>
+                        <li>Protection contre les attaques CSRF/XSS</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Performance</h3>
+                    <ul style="text-align: left; margin-top: 1rem;">
+                        <li>Temps de chargement réduit de 40%</li>
+                        <li>Optimisation du cache SQLite</li>
+                        <li>Lazy loading des images/documents</li>
+                        <li>Réduction de 30% de la mémoire RAM</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Interface Utilisateur</h3>
+                    <ul style="text-align: left; margin-top: 1rem;">
+                        <li>Nouveau dashboard avec widgets</li>
+                        <li>Navigation améliorée et plus intuitive</li>
+                        <li>Recherche globale ultra-rapide</li>
+                        <li>Mode compact pour petits écrans</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>Gestion des Données</h3>
+                    <ul style="text-align: left; margin-top: 1rem;">
+                        <li>Backup automatique quotidien</li>
+                        <li>Export PDF amélioré</li>
+                        <li>Import/Export CSV généralisé</li>
+                        <li>Restauration sélective possible</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Multi-plateforme</h3>
+                    <ul style="text-align: left; margin-top: 1rem;">
+                        <li>Support macOS optimisé</li>
+                        <li>Version Linux stable</li>
+                        <li>Installateur Windows amélioré</li>
+                        <li>Auto-update cross-platform</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Internationalisation</h3>
+                    <ul style="text-align: left; margin-top: 1rem;">
+                        <li>Support multilingue (FR, EN, ES)</li>
+                        <li>Formats de dates localisés</li>
+                        <li>Unités métriques/impériales</li>
+                        <li>Traductions IA automatiques</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corrections de bugs -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">🐛 Corrections de Bugs</h2>
+
+            <div class="bug-list">
+                <div class="bug-item">
+                    <span class="bug-tag fixed">Corrigé</span>
+                    <strong>Export PDF multi-pages</strong>
+                    <p>Les dossiers médicaux de plus de 10 pages s'exportaient avec des pages vides. Problème résolu avec pagination automatique.</p>
+                </div>
+
+                <div class="bug-item">
+                    <span class="bug-tag fixed">Corrigé</span>
+                    <strong>Synchronisation iCloud</strong>
+                    <p>Les utilisateurs macOS rencontraient des conflits de synchro. Amélioration de la gestion des conflits avec merge intelligent.</p>
+                </div>
+
+                <div class="bug-item">
+                    <span class="bug-tag fixed">Corrigé</span>
+                    <strong>Rappels notifications</strong>
+                    <p>Certains rappels n'apparaissaient pas à l'heure prévue. Refonte complète du système de notifications avec queue persistante.</p>
+                </div>
+
+                <div class="bug-item">
+                    <span class="bug-tag fixed">Corrigé</span>
+                    <strong>Import ordonnances</strong>
+                    <p>L'OCR échouait sur certains formats PDF. Ajout du support de 15 nouveaux formats de documents médicaux.</p>
+                </div>
+
+                <div class="bug-item">
+                    <span class="bug-tag fixed">Corrigé</span>
+                    <strong>Graphiques Timeline</strong>
+                    <p>Les graphiques d'évolution plantaient avec >100 points de données. Optimisation avec virtualisation des données.</p>
+                </div>
+
+                <div class="bug-item">
+                    <span class="bug-tag fixed">Corrigé</span>
+                    <strong>Recherche accents</strong>
+                    <p>La recherche ne trouvait pas les termes avec accents. Normalisation Unicode appliquée.</p>
+                </div>
+
+                <div class="bug-item">
+                    <span class="bug-tag fixed">Corrigé</span>
+                    <strong>Mode sombre thèmes</strong>
+                    <p>Certains thèmes avaient des contrastes illisibles en mode sombre. Ajustement automatique de contraste WCAG 2.1 AA.</p>
+                </div>
+
+                <div class="bug-item">
+                    <span class="bug-tag fixed">Corrigé</span>
+                    <strong>Backup crypté</strong>
+                    <p>Les backups > 500 MB échouaient au chiffrement. Passage à un chiffrement par chunks avec progression visuelle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Migration -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">📦 Migration & Installation</h2>
+
+            <div class="migration-box">
+                <h3>⬆️ Migration depuis v1.x.x</h3>
+                <p><strong>Cette mise à jour est compatible avec v1.x.x. Vos données seront automatiquement migrées.</strong></p>
+                <ol style="line-height: 2; margin-top: 1.5rem;">
+                    <li>Télécharger CareLink v2.5.0</li>
+                    <li>Fermer l'application si elle est ouverte</li>
+                    <li>Lancer l'installateur</li>
+                    <li>Au premier démarrage, la migration se lance automatiquement (1-5 min selon la taille des données)</li>
+                    <li>Un backup de sécurité v1.x.x est créé dans <code>Documents/CareLink/backups/</code></li>
+                </ol>
+                <div class="warning-box" style="margin-top: 2rem; padding: 1rem; background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 8px; color: #1a1a1a;">
+                    <strong style="color: #1a1a1a;">⚠️ Important :</strong> Effectuez un backup manuel avant toute mise à jour majeure via Paramètres > Sauvegarde.
+                </div>
+            </div>
+
+            <div class="stats-box" style="margin-top: 3rem; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                <h3 style="color: #1a1a1a;">📊 Statistiques de la Release</h3>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-top: 1.5rem;">
+                    <div>
+                        <div style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #666;">Taille installateur</div>
+                        <div style="font-size: 1.5rem; font-weight: 700; color: #3B9BFF;">95 MB</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #666;">Tests automatisés</div>
+                        <div style="font-size: 1.5rem; font-weight: 700; color: #00E676;">45/45 ✓</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #666;">Score audit global</div>
+                        <div style="font-size: 1.5rem; font-weight: 700; color: #3B9BFF;">82/100</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.9rem; margin-bottom: 0.5rem; color: #666;">Bugs connus</div>
+                        <div style="font-size: 1.5rem; font-weight: 700; color: #00E676;">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">🗺️ Prochaines Versions</h2>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>v2.1.0 - Q1 2025</h3>
+                    <ul style="text-align: left; margin-top: 1rem;">
+                        <li>Synchronisation cloud multi-appareils</li>
+                        <li>Application mobile (iOS/Android)</li>
+                        <li>Intégration montres connectées</li>
+                        <li>Partage sécurisé avec médecins</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>v2.2.0 - Q2 2025</h3>
+                    <ul style="text-align: left; margin-top: 1rem;">
+                        <li>IA prédictive avancée</li>
+                        <li>Recommandations santé personnalisées</li>
+                        <li>Détection anomalies automatique</li>
+                        <li>Coach santé virtuel</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🏥</div>
+                    <h3>v3.0.0 - 2026</h3>
+                    <ul style="text-align: left; margin-top: 1rem;">
+                        <li>Intégration dossier médical partagé (DMP)</li>
+                        <li>Téléconsultation intégrée</li>
+                        <li>Paiement pharmacie/médecins</li>
+                        <li>Réseau social santé privé</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <h2>Prêt à passer à la v2.5.0 ?</h2>
+            <p>Téléchargez dès maintenant la dernière version avec toutes ces nouveautés</p>
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn-primary">Télécharger v2.5.0</a>
+                <a href="documentation.html" class="btn-secondary">Voir la documentation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CareLink</h3>
+                <p>Gestion Connectée de la Santé Familiale</p>
+                <p style="margin-top: 1rem;">Version 2.5.0</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+                    <li><a href="services.html">Services Pro</a></li>
+                    <li><a href="tarifs.html">Tarifs</a></li>
+                    <li><a href="open-source.html">Open Source</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Ressources</h3>
+                <ul>
+                    <li><a href="changelog.html">Changelog</a></li>
+                    <li><a href="qualite.html">Qualité</a></li>
+                    <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="open-source.html">Open Source</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Professionnel</h3>
+                <p>Email: <a href="mailto:Riisalthkarral@gmail.com">Riisalthkarral@gmail.com</a></p>
+                <p>Développeur: VIEY David</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 CareLink - Développé par VIEY David - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
