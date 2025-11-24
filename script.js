@@ -16,10 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
     html.setAttribute('data-theme', savedTheme);
 
     if (darkModeToggle) {
-        darkModeToggle.addEventListener('click', function() {
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        // Sync checkbox state with saved theme
+        darkModeToggle.checked = (savedTheme === 'dark');
 
+        darkModeToggle.addEventListener('change', function() {
+            const newTheme = this.checked ? 'dark' : 'light';
             html.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
         });

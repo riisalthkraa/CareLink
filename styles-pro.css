@@ -436,6 +436,11 @@ header {
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Selection */
@@ -448,52 +453,77 @@ html {
    MODE SOMBRE
    ============================================================================ */
 
-/* Toggle Button */
+/* Toggle Switch */
 .nav-actions {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.theme-toggle {
+.theme-switch {
   position: relative;
-  width: 44px;
-  height: 44px;
-  border: none;
-  background: var(--bg-secondary);
-  border-radius: var(--radius-full);
+  display: inline-block;
+  width: 56px;
+  height: 28px;
+}
+
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
   cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gray-200);
+  transition: 0.3s;
+  border-radius: 34px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  transition: all var(--transition-base);
-  border: 2px solid var(--border-light);
+  justify-content: space-between;
+  padding: 0 6px;
 }
 
-.theme-toggle:hover {
-  background: var(--primary-light);
-  border-color: var(--primary);
-  transform: scale(1.05);
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.theme-toggle svg {
-  width: 20px;
-  height: 20px;
-  stroke: var(--primary);
+.theme-switch input:checked + .slider {
+  background: var(--primary);
+}
+
+.theme-switch input:checked + .slider::before {
+  transform: translateX(28px);
+}
+
+.slider svg {
+  width: 14px;
+  height: 14px;
+  stroke: var(--gray-500);
   stroke-width: 2;
-  transition: all var(--transition-base);
+  z-index: 1;
 }
 
-.theme-toggle .moon-icon {
-  display: none;
+.slider .sun-icon {
+  stroke: #FDB813;
 }
 
-[data-theme="dark"] .theme-toggle .sun-icon {
-  display: none;
-}
-
-[data-theme="dark"] .theme-toggle .moon-icon {
-  display: block;
+.slider .moon-icon {
+  stroke: #E5E7EB;
 }
 
 /* Dark Theme Variables */

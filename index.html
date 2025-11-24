@@ -30,10 +30,13 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="nav-actions">
-                <button class="theme-toggle" id="darkModeToggle" aria-label="Toggle theme">
-                    <i data-lucide="sun" class="sun-icon"></i>
-                    <i data-lucide="moon" class="moon-icon"></i>
-                </button>
+                <label class="theme-switch" for="darkModeToggle">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider">
+                        <i data-lucide="sun" class="sun-icon"></i>
+                        <i data-lucide="moon" class="moon-icon"></i>
+                    </span>
+                </label>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
             </div>
         </nav>
