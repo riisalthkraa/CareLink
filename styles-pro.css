@@ -371,6 +371,17 @@ header {
   box-shadow: var(--shadow-sm);
 }
 
+nav {
+  display: flex !important;
+  align-items: center !important;
+  gap: 2rem !important;
+}
+
+nav .nav-links {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
 .nav-links a.active {
   background: var(--gradient-primary);
   -webkit-background-clip: text;
@@ -458,7 +469,8 @@ body {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  margin-left: auto;
+  margin-left: 0;
+  flex-shrink: 0;
 }
 
 .theme-switch {
