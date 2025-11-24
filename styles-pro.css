@@ -374,12 +374,7 @@ header {
 nav {
   display: flex !important;
   align-items: center !important;
-  gap: 2rem !important;
-}
-
-nav .nav-links {
-  margin-left: auto !important;
-  margin-right: 0 !important;
+  justify-content: space-between !important;
 }
 
 .nav-links a.active {
