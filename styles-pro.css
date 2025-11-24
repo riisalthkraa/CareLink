@@ -443,3 +443,164 @@ html {
   background: var(--primary);
   color: white;
 }
+
+/* ============================================================================
+   MODE SOMBRE
+   ============================================================================ */
+
+/* Toggle Button */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.theme-toggle {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-base);
+  border: 2px solid var(--border-light);
+}
+
+.theme-toggle:hover {
+  background: var(--primary-light);
+  border-color: var(--primary);
+  transform: scale(1.05);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--primary);
+  stroke-width: 2;
+  transition: all var(--transition-base);
+}
+
+.theme-toggle .moon-icon {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle .sun-icon {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle .moon-icon {
+  display: block;
+}
+
+/* Dark Theme Variables */
+[data-theme="dark"] {
+  --primary: #60A5FA;
+  --primary-light: #1E3A5F;
+  --primary-dark: #93C5FD;
+
+  --secondary: #34D399;
+  --secondary-light: #1E3A32;
+  --secondary-dark: #6EE7B7;
+
+  --accent: #C084FC;
+  --accent-light: #3B2F5F;
+  --accent-dark: #E9D5FF;
+
+  --success: #34D399;
+  --warning: #FBBF24;
+  --error: #F87171;
+  --info: #60A5FA;
+
+  --gray-50: #1F2937;
+  --gray-100: #374151;
+  --gray-200: #4B5563;
+  --gray-300: #6B7280;
+  --gray-400: #9CA3AF;
+  --gray-500: #D1D5DB;
+  --gray-600: #E5E7EB;
+  --gray-700: #F3F4F6;
+  --gray-800: #F9FAFB;
+  --gray-900: #FFFFFF;
+
+  --bg-primary: #111827 !important;
+  --bg-secondary: #1F2937 !important;
+  --bg-tertiary: #374151 !important;
+  --bg-dark: #030712;
+  --bg-light: #1F2937 !important;
+
+  --text-primary: #F9FAFB;
+  --text-secondary: #E5E7EB;
+  --text-tertiary: #D1D5DB;
+  --text-light: #9CA3AF;
+  --text-dark: #F9FAFB !important;
+  --text-on-dark: #F9FAFB;
+
+  --border-light: #374151 !important;
+  --border-medium: #4B5563;
+  --border-dark: #6B7280;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+
+  --gradient-primary: linear-gradient(135deg, #1E3A8A 0%, #065F46 100%);
+  --gradient-accent: linear-gradient(135deg, #6B21A8 0%, #9333EA 100%);
+  --gradient-health: linear-gradient(135deg, #065F46 0%, #047857 100%);
+  --gradient-premium: linear-gradient(135deg, #1E40AF 0%, #7C3AED 100%);
+}
+
+[data-theme="dark"] .hero {
+  background: var(--gradient-primary);
+}
+
+[data-theme="dark"] .feature-card,
+[data-theme="dark"] .pricing-card {
+  background: var(--bg-secondary);
+  border-color: var(--border-light);
+}
+
+[data-theme="dark"] .pricing-card.featured {
+  background: linear-gradient(to bottom, var(--bg-secondary), var(--primary-light));
+  border-color: var(--primary);
+}
+
+[data-theme="dark"] footer {
+  background: var(--bg-dark);
+  border-top-color: var(--primary);
+}
+
+[data-theme="dark"] .section.bg-light {
+  background: var(--bg-secondary);
+}
+
+[data-theme="dark"] .comparison-table table {
+  background: var(--bg-secondary);
+}
+
+[data-theme="dark"] .comparison-table thead {
+  background: var(--gradient-primary);
+}
+
+[data-theme="dark"] .comparison-table tbody tr:hover {
+  background: var(--primary-light);
+}
+
+[data-theme="dark"] header {
+  background: rgba(31, 41, 55, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+[data-theme="dark"] .btn-secondary {
+  background: var(--bg-secondary) !important;
+  border-color: var(--primary) !important;
+}
+
+[data-theme="dark"] .btn-secondary:hover {
+  background: var(--primary-light) !important;
+}
