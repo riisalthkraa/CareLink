@@ -8,6 +8,19 @@
  */
 
 :root {
+  /* OVERRIDE - Forcer le thème clair Pro */
+  --primary-color: #3B82F6 !important;
+  --primary-dark: #1E40AF !important;
+  --text-dark: #111827 !important;
+  --text-light: #6B7280 !important;
+  --text-muted: #9CA3AF !important;
+  --bg-primary: #FFFFFF !important;
+  --bg-secondary: #F9FAFB !important;
+  --bg-tertiary: #F3F4F6 !important;
+  --bg-light: #F9FAFB !important;
+  --bg-white: #FFFFFF !important;
+  --border-color: #E5E7EB !important;
+
   /* Couleurs Pro - Palette médicale */
   --primary: #3B82F6;           /* Medical Blue */
   --primary-light: #DBEAFE;
