@@ -459,79 +459,72 @@ body {
    MODE SOMBRE
    ============================================================================ */
 
-/* Toggle Switch */
-.nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  margin-left: 0;
-  flex-shrink: 0;
-}
-
-.theme-switch {
-  position: relative;
-  display: inline-block;
+/* Floating Theme Toggle */
+.theme-switch-floating {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9999;
   width: 56px;
-  height: 28px;
+  height: 56px;
+  display: inline-block;
+  cursor: pointer;
 }
 
-.theme-switch input {
+.theme-switch-floating input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.slider {
+.theme-switch-floating .slider {
   position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--gray-200);
-  transition: 0.3s;
-  border-radius: 34px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 6px;
-}
-
-.slider::before {
-  position: absolute;
-  content: "";
-  height: 22px;
-  width: 22px;
-  left: 3px;
-  bottom: 3px;
-  background-color: white;
+  background: var(--bg-primary);
+  border: 2px solid var(--primary);
   transition: 0.3s;
   border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-xl);
 }
 
-.theme-switch input:checked + .slider {
-  background: var(--primary);
+.theme-switch-floating .slider:hover {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-2xl);
 }
 
-.theme-switch input:checked + .slider::before {
-  transform: translateX(28px);
-}
-
-.slider svg {
-  width: 14px;
-  height: 14px;
-  stroke: var(--gray-500);
+.theme-switch-floating .slider svg {
+  width: 24px;
+  height: 24px;
   stroke-width: 2;
-  z-index: 1;
+  position: absolute;
+  transition: all 0.3s ease;
 }
 
-.slider .sun-icon {
+.theme-switch-floating .slider .sun-icon {
   stroke: #FDB813;
+  opacity: 1;
 }
 
-.slider .moon-icon {
-  stroke: #E5E7EB;
+.theme-switch-floating .slider .moon-icon {
+  stroke: var(--primary);
+  opacity: 0;
+}
+
+.theme-switch-floating input:checked + .slider .sun-icon {
+  opacity: 0;
+  transform: rotate(180deg);
+}
+
+.theme-switch-floating input:checked + .slider .moon-icon {
+  opacity: 1;
+  transform: rotate(0deg);
 }
 
 /* Dark Theme Variables */
