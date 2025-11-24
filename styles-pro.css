@@ -277,6 +277,13 @@ ul li i {
   overflow: hidden;
 }
 
+.hero p {
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .hero::before {
   content: '';
   position: absolute;
@@ -333,6 +340,15 @@ ul li i {
 /* Section backgrounds alternés */
 .section.bg-light {
   background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary));
+}
+
+/* Sous-titres plus lisibles */
+.section-subtitle {
+  color: var(--gray-600) !important;
+  font-size: 1.25rem !important;
+  font-weight: 500 !important;
+  line-height: 1.6 !important;
+  max-width: 700px !important;
 }
 
 /* Footer Pro */
