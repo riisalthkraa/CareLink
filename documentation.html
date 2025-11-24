@@ -6,14 +6,13 @@
     <meta name="description" content="Documentation CareLink - Guides d'utilisation et ressources">
     <title>Documentation - CareLink</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles-pro.css">
-</head>
+    <link rel="stylesheet" href="styles-pro.css"></head>
 <body>
     <!-- HEADER & NAVIGATION -->
     <header>
         <nav>
             <a href="index.html" class="logo">
-                <span>🏥</span>
+                <i data-lucide="heart-pulse"></i>
                 <span>CareLink</span>
             </a>
             <ul class="nav-links" id="navLinks">
@@ -49,21 +48,21 @@
         <div class="container">
             <div class="features-grid">
                 <div class="feature-card" style="text-align: center;">
-                    <div class="feature-icon">🚀</div>
+                    <div class="feature-icon"><i data-lucide="rocket"></i></div>
                     <h3>Guide Démarrage Rapide</h3>
                     <p style="margin: 1rem 0 2rem;">Installation et première utilisation en 10 minutes</p>
                     <a href="#demarrage" class="btn-primary">Commencer →</a>
                 </div>
 
                 <div class="feature-card" style="text-align: center;">
-                    <div class="feature-icon">📖</div>
+                    <div class="feature-icon"><i data-lucide="book-open"></i></div>
                     <h3>Manuel Utilisateur</h3>
                     <p style="margin: 1rem 0 2rem;">Guide complet PDF téléchargeable</p>
                     <a href="#" class="btn-primary" download>Télécharger PDF →</a>
                 </div>
 
                 <div class="feature-card" style="text-align: center;">
-                    <div class="feature-icon">🎥</div>
+                    <div class="feature-icon"><i data-lucide="video"></i></div>
                     <h3>Tutoriels Vidéo</h3>
                     <p style="margin: 1rem 0 2rem;">Démonstrations pas à pas</p>
                     <a href="#videos" class="btn-primary">Voir les vidéos →</a>
@@ -75,7 +74,7 @@
     <!-- Guide Démarrage -->
     <section id="demarrage" class="section bg-light">
         <div class="container">
-            <h2 class="section-title">🚀 Guide de Démarrage Rapide</h2>
+            <h2 class="section-title"><i data-lucide="rocket"></i> Guide de Démarrage Rapide</h2>
 
             <div class="features-grid">
                 <div class="feature-card">
@@ -175,7 +174,7 @@
     <!-- FAQ -->
     <section class="section bg-light">
         <div class="container">
-            <h2 class="section-title">❓ Questions Fréquentes (FAQ)</h2>
+            <h2 class="section-title"><i data-lucide="help-circle"></i> Questions Fréquentes (FAQ)</h2>
 
             <div style="max-width: 900px; margin: 0 auto;">
                 <div class="feature-card" style="margin-bottom: 1.5rem;">
@@ -220,11 +219,11 @@
     <!-- Support -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">💬 Besoin d'aide ?</h2>
+            <h2 class="section-title"><i data-lucide="message-circle"></i> Besoin d'aide ?</h2>
 
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">📖</div>
+                    <div class="feature-icon"><i data-lucide="book-open"></i></div>
                     <h3>Ressources</h3>
                     <ul style="text-align: left; margin-top: 1rem; line-height: 2;">
                         <li><a href="changelog.html">Notes de version v3.0.0</a></li>
@@ -235,7 +234,7 @@
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">🤝</div>
+                    <div class="feature-icon"><i data-lucide="handshake"></i></div>
                     <h3>Aide & Support</h3>
                     <ul style="text-align: left; margin-top: 1rem; line-height: 2;">
                         <li><a href="contact.html">Formulaire de contact</a></li>
@@ -304,5 +303,9 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>

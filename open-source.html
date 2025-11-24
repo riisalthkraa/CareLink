@@ -8,14 +8,13 @@
     <meta name="author" content="VIEY David">
     <title>Open Source - CareLink</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles-pro.css">
-</head>
+    <link rel="stylesheet" href="styles-pro.css"></head>
 <body>
     <!-- HEADER & NAVIGATION -->
     <header>
         <nav>
             <a href="index.html" class="logo">
-                <span>🏥</span>
+                <i data-lucide="heart-pulse"></i>
                 <span>CareLink</span>
             </a>
             <ul class="nav-links" id="navLinks">
@@ -49,19 +48,19 @@
 
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">💚</div>
+                    <div class="feature-icon"><i data-lucide="heart"></i></div>
                     <h3>Gratuit pour Tous</h3>
                     <p>Les particuliers, associations, etudiants et organismes publics peuvent utiliser CareLink gratuitement, sans limitation.</p>
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">🔓</div>
+                    <div class="feature-icon"><i data-lucide="github"></i></div>
                     <h3>Code Source Ouvert</h3>
                     <p>Le code est accessible a tous. Vous pouvez l'inspecter, le modifier et contribuer a son amelioration.</p>
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">🤝</div>
+                    <div class="feature-icon"><i data-lucide="handshake"></i></div>
                     <h3>Communaute</h3>
                     <p>Rejoignez une communaute de developpeurs et d'utilisateurs qui ameliorent CareLink ensemble.</p>
                 </div>
@@ -120,7 +119,7 @@
 
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">📁</div>
+                    <div class="feature-icon"><i data-lucide="folder"></i></div>
                     <h3>Code Source GitHub</h3>
                     <p><strong>Technologies utilisees :</strong></p>
                     <ul style="text-align: left; margin-top: 1rem;">
@@ -134,14 +133,14 @@
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">📖</div>
+                    <div class="feature-icon"><i data-lucide="book-open"></i></div>
                     <h3>Documentation API</h3>
                     <p>Documentation complete de l'API Electron IPC avec tous les endpoints.</p>
                     <a href="https://github.com/riisalthkraa/CareLinkPro/blob/main/docs/api/ELECTRON_IPC.md" class="btn-secondary" style="margin-top: 1rem; display: inline-block;">Voir la Documentation</a>
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">🧪</div>
+                    <div class="feature-icon"><i data-lucide="flask"></i></div>
                     <h3>Tests</h3>
                     <p>Suite de tests Jest pour garantir la qualite et la fiabilite du code.</p>
                     <a href="https://github.com/riisalthkraa/CareLinkPro/actions" class="btn-secondary" style="margin-top: 1rem; display: inline-block;">Voir les Tests</a>
@@ -157,19 +156,19 @@
 
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">🐛</div>
+                    <div class="feature-icon"><i data-lucide="bug"></i></div>
                     <h3>Signaler un Bug</h3>
                     <p>Vous avez trouve un probleme ? Contactez-nous pour nous le signaler.</p>
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">💡</div>
+                    <div class="feature-icon"><i data-lucide="lightbulb"></i></div>
                     <h3>Proposer une Idee</h3>
                     <p>Une suggestion d'amelioration ? Nous sommes a l'ecoute de vos idees.</p>
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">👨‍💻</div>
+                    <div class="feature-icon"><i data-lucide="user"></i></div>
                     <h3>Contribuer au Code</h3>
                     <p>Developpeur ? Vous pouvez contribuer directement au projet.</p>
                 </div>
@@ -273,5 +272,9 @@ Copyright (c) 2025 VIEY David - Tous droits reserves selon les termes ci-dessus.
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>

@@ -189,14 +189,58 @@
   box-shadow: var(--shadow-md);
 }
 
-/* Icônes avec gradient Pro */
+/* Icônes Lucide Pro */
 .feature-icon {
-  font-size: 3rem;
-  background: var(--gradient-premium);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.feature-icon svg {
+  width: 48px;
+  height: 48px;
+  stroke: url(#icon-gradient);
+  stroke-width: 2;
   filter: drop-shadow(0 4px 6px rgba(59, 130, 246, 0.2));
+}
+
+/* Logo avec icône */
+.logo svg {
+  width: 32px;
+  height: 32px;
+  stroke: var(--primary);
+  stroke-width: 2;
+  margin-right: 0.5rem;
+}
+
+/* Icônes dans les cartes */
+.pricing-card svg,
+.feature-card svg,
+.contact-info svg {
+  stroke: var(--primary);
+  stroke-width: 2;
+}
+
+/* Icônes dans les listes */
+.pricing-features li svg,
+.features-grid li svg,
+ul li svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  stroke: var(--primary);
+  stroke-width: 2;
+}
+
+.pricing-features li i,
+ul li i {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.5rem;
 }
 
 /* Stats avec effet glassmorphism */

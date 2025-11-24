@@ -8,14 +8,13 @@
     <meta name="author" content="VIEY David">
     <title>Services Pro - CareLink</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles-pro.css">
-</head>
+    <link rel="stylesheet" href="styles-pro.css"></head>
 <body>
     <!-- HEADER & NAVIGATION -->
     <header>
         <nav>
             <a href="index.html" class="logo">
-                <span>🏥</span>
+                <i data-lucide="heart-pulse"></i>
                 <span>CareLink</span>
             </a>
             <ul class="nav-links" id="navLinks">
@@ -49,19 +48,19 @@
 
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">💻</div>
+                    <div class="feature-icon"><i data-lucide="monitor"></i></div>
                     <h3>Développement Sur Mesure</h3>
                     <p>Applications desktop, web et mobiles adaptées à vos besoins.</p>
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">🏢</div>
+                    <div class="feature-icon"><i data-lucide="building"></i></div>
                     <h3>CareLink Entreprise</h3>
                     <p>Version personnalisée de CareLink pour les professionnels de santé.</p>
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">🎓</div>
+                    <div class="feature-icon"><i data-lucide="graduation-cap"></i></div>
                     <h3>Consulting & Formation</h3>
                     <p>Accompagnement technique et formation pour vos équipes.</p>
                 </div>
@@ -115,5 +114,9 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
